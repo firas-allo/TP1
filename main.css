@@ -1,0 +1,60 @@
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: #fff;
+            font-family: sans-serif;
+        }
+
+        /* Conteneur de l'afficheur */
+        .afficheur {
+            display: grid;
+            grid-template-areas: 
+                "top top"
+                "top-left top-right"
+                "middle middle"
+                "bottom-left bottom-right"
+                "bottom bottom";
+            grid-template-columns: 40px 40px;
+            grid-template-rows: 15px 60px 15px 60px 15px;
+            gap: 4px;
+            padding: 20px;
+            background-color: #000;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.8);
+        }
+
+        /* Style de base des segments */
+        .segment {
+            background-color: #333; /* Éteint */
+            transition: all 0.2s ease;
+        }
+
+        /* Segments allumés */
+        .allume {
+            background-color: #ff3333; /* Rouge vif */
+            box-shadow: 0 0 10px #ff3333, inset 0 0 5px rgba(255,255,255,0.5);
+        }
+
+        /* Configuration des 7 segments (A à G) */
+        #seg-a { grid-area: top; }
+        #seg-b { grid-area: top-right; }
+        #seg-c { grid-area: bottom-right; }
+        #seg-d { grid-area: bottom; }
+        #seg-e { grid-area: bottom-left; }
+        #seg-f { grid-area: top-left; }
+        #seg-g { grid-area: middle; }
+
+        .controles {
+            margin-top: 20px;
+        }
+
+        input {
+            padding: 10px;
+            font-size: 16px;
+            width: 80px;
+            text-align: center;
+        }

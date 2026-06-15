@@ -1,0 +1,109 @@
+<!--<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>main</title>
+  
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+  
+  </head>
+
+  <body>
+    <header>
+      <h2>projet pour ma mère :</h2><br>
+      <p>Ce projet est faite dans une seule soirée seulement de ma part</p>
+    
+    </header>
+    <main>
+      <section class="container">
+        <div class="resultat">
+          <section>
+            
+          </section>
+        </div>
+        <div>
+            <section>
+                <a class="btn btn-primary" role="button">
+                somme
+                </a>
+            </section>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="adresse-container">
+        <h3><i class="fa fa-map-marker"></i>Emplacement</h3>
+        <p>23, rue Notre-Dame, Québec, QC, G1K 4E9</p>
+      </section>
+      <section class="icons">
+        <a href="https://www.facebook.com/" target="_blank"
+          ><i class="fa fa-facebook-square"></i
+        ></a>
+        <a href="https://www.instagram.com/" target="_blank"
+          ><i class="fa fa-instagram"></i
+        ></a>
+        <a href="https://www.youtube.com/" target="_blank"
+          ><i class="fa fa-youtube-square"></i
+        ></a>
+        <a href="https://x.com/" target="_blank"
+          ><i class="fa fa-twitter"></i
+        ></a>
+      </section>
+    </footer>
+  </body>
+</html>
+-->
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Afficheur 7 Segments</title>
+    <link rel="stylesheet" href="main.css" />
+
+    <link
+      rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"/>
+</head>
+<body>
+
+    <div class="afficheur">
+        <div class="segment" id="seg-a"></div>
+        <div class="segment" id="seg-b"></div>
+        <div class="segment" id="seg-c"></div>
+        <div class="segment" id="seg-d"></div>
+        <div class="segment" id="seg-e"></div>
+        <div class="segment" id="seg-f"></div>
+        <div class="segment" id="seg-g"></div>
+    </div>
+
+    <div class="controles">
+        <label for="chiffre">Chiffre (0-9) :</label>
+        <input type="number" id="chiffre" min="0" max="9" value="0" oninput="afficherChiffre(this.value)">
+    </div>
+
+    <script src="main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
